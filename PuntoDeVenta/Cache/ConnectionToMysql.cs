@@ -12,7 +12,7 @@ namespace PuntoDeVenta.Cache
         private readonly string connectionString;
         public ConnectionToMysql()
         {
-            connectionString = "datasource=192.168.1.43;port=3306;username=puntodeventa;password=puntodeventa;database=puntodeventa;";
+            connectionString = "datasource=localhost;port=3306;username=root;password=;database=puntodeventa;";
         }
 
         protected MySqlConnection GetConnection()

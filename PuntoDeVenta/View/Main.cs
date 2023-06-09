@@ -43,7 +43,7 @@ namespace PuntoDeVenta.Usuarios
         }
         private void llenarTabla()
         {
-            MySqlConnection cn = new MySqlConnection("datasource=192.168.1.43;port=3306;username=root;password=;database=puntodeventa;");
+            MySqlConnection cn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=puntodeventa;");
 
             string where = " where 1=1 ";
 
@@ -102,7 +102,7 @@ namespace PuntoDeVenta.Usuarios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection cn = new MySqlConnection("datasource=192.168.1.43;port=3306;username=root;password=;database=puntodeventa;");
+            MySqlConnection cn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=puntodeventa;");
 
             string where = " where 1=1 ";
 
@@ -144,7 +144,7 @@ namespace PuntoDeVenta.Usuarios
 
         private void codigo_TextChanged(object sender, EventArgs e)
         {
-            MySqlConnection cn = new MySqlConnection("datasource=192.168.1.43;port=3306;username=root;password=;database=puntodeventa;");
+            MySqlConnection cn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=puntodeventa;");
 
             string where = " where 1=1 ";
 
@@ -163,7 +163,7 @@ namespace PuntoDeVenta.Usuarios
 
         private void producto_TextChanged(object sender, EventArgs e)
         {
-            MySqlConnection cn = new MySqlConnection("datasource=192.168.1.43;port=3306;username=root;password=;database=puntodeventa;");
+            MySqlConnection cn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=puntodeventa;");
 
             string where = " where 1=1 ";
 
@@ -182,7 +182,7 @@ namespace PuntoDeVenta.Usuarios
 
         private void precio_TextChanged(object sender, EventArgs e)
         {
-            MySqlConnection cn = new MySqlConnection("datasource=192.168.1.43;port=3306;username=root;password=;database=puntodeventa;");
+            MySqlConnection cn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=puntodeventa;");
 
             string where = " where 1=1 ";
 

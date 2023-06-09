@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 61);
+            this.label1.Location = new System.Drawing.Point(19, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
@@ -86,21 +87,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(336, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(240, 61);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(492, 509);
+            this.dataGridView1.Size = new System.Drawing.Size(453, 368);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
@@ -110,7 +112,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 106);
+            this.label2.Location = new System.Drawing.Point(19, 58);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
@@ -120,7 +122,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 157);
+            this.label3.Location = new System.Drawing.Point(19, 89);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
@@ -129,34 +131,34 @@
             // 
             // codigo
             // 
-            this.codigo.Location = new System.Drawing.Point(95, 51);
+            this.codigo.Location = new System.Drawing.Point(95, 24);
             this.codigo.Margin = new System.Windows.Forms.Padding(4);
             this.codigo.Name = "codigo";
-            this.codigo.Size = new System.Drawing.Size(213, 23);
+            this.codigo.Size = new System.Drawing.Size(116, 23);
             this.codigo.TabIndex = 5;
             this.codigo.TextChanged += new System.EventHandler(this.codigo_TextChanged);
             // 
             // producto
             // 
-            this.producto.Location = new System.Drawing.Point(95, 97);
+            this.producto.Location = new System.Drawing.Point(95, 55);
             this.producto.Margin = new System.Windows.Forms.Padding(4);
             this.producto.Name = "producto";
-            this.producto.Size = new System.Drawing.Size(213, 23);
+            this.producto.Size = new System.Drawing.Size(116, 23);
             this.producto.TabIndex = 6;
             this.producto.TextChanged += new System.EventHandler(this.producto_TextChanged);
             // 
             // precio
             // 
-            this.precio.Location = new System.Drawing.Point(95, 148);
+            this.precio.Location = new System.Drawing.Point(95, 86);
             this.precio.Margin = new System.Windows.Forms.Padding(4);
             this.precio.Name = "precio";
-            this.precio.Size = new System.Drawing.Size(213, 23);
+            this.precio.Size = new System.Drawing.Size(116, 23);
             this.precio.TabIndex = 7;
             this.precio.TextChanged += new System.EventHandler(this.precio_TextChanged);
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.menuStrip1.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -168,7 +170,8 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.menuStrip1.Size = new System.Drawing.Size(1100, 44);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(940, 44);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -178,7 +181,7 @@
             this.usuarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editarUsuarioToolStripMenuItem,
             this.registrarNuevoUsuarioToolStripMenuItem});
-            this.usuarios.ForeColor = System.Drawing.SystemColors.Control;
+            this.usuarios.ForeColor = System.Drawing.Color.White;
             this.usuarios.Image = ((System.Drawing.Image)(resources.GetObject("usuarios.Image")));
             this.usuarios.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
             this.usuarios.Name = "usuarios";
@@ -190,7 +193,7 @@
             // editarUsuarioToolStripMenuItem
             // 
             this.editarUsuarioToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            this.editarUsuarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.editarUsuarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.editarUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarUsuarioToolStripMenuItem.Image")));
             this.editarUsuarioToolStripMenuItem.Name = "editarUsuarioToolStripMenuItem";
             this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
@@ -208,6 +211,7 @@
             // 
             this.productos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarNuevoProductoToolStripMenuItem});
+            this.productos.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.productos.ForeColor = System.Drawing.SystemColors.Control;
             this.productos.Image = ((System.Drawing.Image)(resources.GetObject("productos.Image")));
             this.productos.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
@@ -238,7 +242,9 @@
             // 
             // venta
             // 
-            this.venta.ForeColor = System.Drawing.SystemColors.Control;
+            this.venta.BackColor = System.Drawing.Color.Transparent;
+            this.venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.venta.ForeColor = System.Drawing.Color.White;
             this.venta.Image = ((System.Drawing.Image)(resources.GetObject("venta.Image")));
             this.venta.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
             this.venta.Name = "venta";
@@ -258,11 +264,11 @@
             this.groupBox1.Controls.Add(this.codigo);
             this.groupBox1.Controls.Add(this.producto);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 232);
+            this.groupBox1.Location = new System.Drawing.Point(13, 161);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(316, 188);
+            this.groupBox1.Size = new System.Drawing.Size(219, 151);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta de producto";
@@ -279,7 +285,7 @@
             this.panel1.Controls.Add(this.Usuario);
             this.panel1.Location = new System.Drawing.Point(13, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 164);
+            this.panel1.Size = new System.Drawing.Size(219, 93);
             this.panel1.TabIndex = 11;
             // 
             // pictureBox1
@@ -287,9 +293,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(153, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(113, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(95, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -337,18 +343,30 @@
             // 
             // dataGridView2
             // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView2.Location = new System.Drawing.Point(842, 52);
+            this.dataGridView2.Location = new System.Drawing.Point(700, 111);
+            this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(246, 398);
-            this.dataGridView2.TabIndex = 12;
+            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(228, 318);
+            this.dataGridView2.TabIndex = 2;
             // 
             // Main
             // 
@@ -357,15 +375,16 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1100, 576);
+            this.ClientSize = new System.Drawing.Size(940, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
